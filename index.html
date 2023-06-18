@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023-06-18_Codewars_Kata8_Find_the_position</title>
+</head>
+
+<body>
+
+    <script>
+
+        // When provided with a letter, return its position in the alphabet.
+
+        // Input :: "a"
+
+        // Ouput :: "Position of alphabet: 1"
+
+
+
+        // My version
+
+        const position = letter => "Position of alphabet: " + (letter.toLowerCase().charCodeAt() - 96);
+
+
+        console.log(position("a"));
+        console.log(position("A"));
+
+
+        // Another way to write My version
+
+        const position1 = letter => `Position of alphabet: ${l.charCodeAt() - 96}`;
+
+
+        console.log(position1("a"));
+        console.log(position1("A"));
+
+
+        // Another solution
+
+        const position2 = letter => "Position of alphabet: " + " abcdefghijklmnopqrstuvwxyz".indexOf(letter.toLowerCase());
+
+
+        console.log(position2("a"));
+        console.log(position2("A"));
+
+    </script>
+
+</body>
+
+</html>
